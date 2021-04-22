@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="tabContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaleTabController">
+    <top>
+        <AnchorPane prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <ToolBar prefHeight="40.0" prefWidth="800.0">
+                    <items>
+                        <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="40.0" prefWidth="780.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" HBox.hgrow="NEVER">
+                            <children>
+                                <Button fx:id="btnAddSale" mnemonicParsing="false" onAction="#addSaleHandler" prefHeight="25.0" prefWidth="90.0" text="New Sale">
+                                    <FlowPane.margin>
+                                        <Insets right="10.0" />
+                                    </FlowPane.margin>
+                                </Button>
+<!--                                <Button fx:id="btnSaleDetail" mnemonicParsing="false" onAction="#saleDetailHandler" prefHeight="25.0" prefWidth="90.0" text="Sale Detail" />-->
+                            </children>
+                        </FlowPane>
+                    </items>
+                </ToolBar>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <TableView fx:id="postTableView" prefHeight="440.0" prefWidth="800.0">
+            <columns>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

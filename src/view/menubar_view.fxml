@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="40.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuBarController">
+    <MenuBar id="menuBar" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="UniLink">
+                <items>
+                    <MenuItem fx:id="menuUserInfo" mnemonicParsing="false" onAction="#menuUserInfoHandler" text="User Information" />
+                    <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#menuQuitHandler" text="Quit" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Data">
+                <items>
+                    <MenuItem fx:id="menuExport" mnemonicParsing="false" onAction="#menuExportHandler" text="Export" />
+                    <MenuItem fx:id="menuImport" mnemonicParsing="false" onAction="#menuImportHandler" text="Import" />
+                </items>
+            </Menu>
+        </menus>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding>
+    </MenuBar>
+</AnchorPane>

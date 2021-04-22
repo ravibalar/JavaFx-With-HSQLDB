@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="tabContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="controller.JobTabController">
+    <top>
+        <AnchorPane prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <ToolBar prefHeight="40.0" prefWidth="800.0">
+                    <items>
+                        <FlowPane alignment="CENTER_RIGHT" columnHalignment="CENTER" nodeOrientation="LEFT_TO_RIGHT"
+                                  orientation="VERTICAL" prefHeight="40.0" prefWidth="780.0" AnchorPane.leftAnchor="5.0"
+                                  AnchorPane.rightAnchor="5.0" HBox.hgrow="NEVER">
+                            <children>
+                                <Button fx:id="btnAddJob" mnemonicParsing="false" onAction="#addJobHandler"
+                                        prefHeight="25.0" prefWidth="90.0" text="New Job">
+                                    <FlowPane.margin>
+                                        <Insets right="10.0"/>
+                                    </FlowPane.margin>
+                                </Button>
+<!--                                <Button fx:id="btnJobDetail" mnemonicParsing="false" onAction="#jobDetailHandler"-->
+<!--                                        prefHeight="25.0" prefWidth="90.0" text="Job Detail"/>-->
+                            </children>
+                        </FlowPane>
+                    </items>
+                </ToolBar>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <TableView fx:id="postTableView" prefHeight="440.0" prefWidth="800.0">
+            <columns>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

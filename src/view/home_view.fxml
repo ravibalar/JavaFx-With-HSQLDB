@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeViewController">
+    <top>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <FlowPane alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="150.0">
+                    <children>
+                        <Text styleClass="logoHeaderTitle" text="UniLink">
+                            <FlowPane.margin>
+                                <Insets left="10.0" />
+                            </FlowPane.margin>
+                        </Text>
+                    </children>
+                </FlowPane>
+                <FlowPane alignment="CENTER_RIGHT" layoutX="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="650.0">
+                    <children>
+                        <Label fx:id="txtWelcome" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="140.0" text="Welcome x,">
+                            <padding>
+                                <Insets right="5.0" />
+                            </padding>
+                        </Label>
+                        <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#btnLogoutHandler" prefHeight="25.0" prefWidth="90.0" text="Logout" />
+                    </children>
+                    <padding>
+                        <Insets left="5.0" right="5.0" />
+                    </padding>
+                </FlowPane>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="480.0" minWidth="-Infinity" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <VBox prefHeight="480.0" prefWidth="800.0">
+            <children>
+                  <fx:include source="menubar_view.fxml" fx:id="menuBar" />
+                  <fx:include source="hometab_view.fxml" fx:id="homeTab" />
+            </children>
+         </VBox>
+        </AnchorPane>
+    </center>
+    <left>
+    </left>
+    <right>
+    </right>
+    <bottom>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
